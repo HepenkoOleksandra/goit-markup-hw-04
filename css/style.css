@@ -37,6 +37,7 @@ address {
     max-width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
+    outline: 1px solid red;
 }
 
 .page-container {
@@ -86,10 +87,7 @@ main {
     gap: 40px;
 }
 
-.header-menu-item {
-    /*padding-top: 24px;
-    padding-bottom: 24px;*/
-}
+.header-menu-item {}
 
 .header-menu-link {
     color: #2E2F42;
@@ -97,15 +95,23 @@ main {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    display: block;
     padding-top: 24px;
     padding-bottom: 24px;
+}
+
+.header-menu-link:hover::after {
+    content: "";
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+        background: var(--OCEAN, #404BBF);
 }
 
 .header-menu-link:hover,
 .header-menu-link:focus,
 .header-menu-link:active {
     color: #404bbf;
-    text-decoration: underline;
 }
 
 .header-address-list {
@@ -138,12 +144,19 @@ main {
 
 /*=====CONTENT======*/
 .content {
-    background-color: #2E2F42;
+background-color: #2E2F42;
+background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office\ 1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
     padding-top: 188px;
     padding-bottom: 188px;
 }
 
-.content-container {}
+.content-container {
+    
+}
 
 .title-top {
     color: #FFF;
@@ -192,8 +205,7 @@ main {
 .company {}
 
 .company-container {
-    padding-left: 0;
-    padding-right: 0;
+  
 }
 
 .visually-hidden {
@@ -220,6 +232,16 @@ main {
     width: calc((100% - 3 * 24px) / 4);
 }
 
+.container-item-icon {
+border-radius: 4px;
+    border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+    background: var(--CLOUD, #F4F4FD);
+}
+
+.company-item-icon {
+
+}
+
 .company-item-subtitle {
     color: #2E2F42;
     font-size: 20px;
@@ -240,11 +262,10 @@ main {
 /*=====TEAM=====*/
 .team {
     background-color: #F4F4FD;
-   }
+       }
 
 .team-container {
-   padding-left: 0;
-   padding-right: 0;
+   
 }
 
 .team-title {
@@ -301,8 +322,7 @@ main {
 .portfolio {}
 
 .portfolio-container {
-    padding-left: 0;
-    padding-right: 0;
+   
 }
 
 .portfolio-title {
@@ -360,8 +380,7 @@ main {
 }
 
 .footer-container {   
-    padding-left: 0;
-    padding-right: 0;
+   
 }
 
 .footer-logo {
