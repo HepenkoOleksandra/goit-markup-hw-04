@@ -165,7 +165,7 @@ main {
 .content {
     background-color: #2E2F42;
     /*background-image: background-image: url(../);*/
-    border-image: url(../images/people-office\ 1.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -174,9 +174,7 @@ main {
     padding-bottom: 188px;
 }
 
-.content-container {
-    
-}
+.content-container {}
 
 .title-top {
     color: #FFF;
